@@ -1,0 +1,11 @@
+BEGIN{
+    FS=",";
+    print "Questão 1";
+}
+{
+	if ($1 == "21751911" || $1 == "21552409")
+        print $1, $2;
+}
+END {
+	print NR,"Programa finalizado!";
+}

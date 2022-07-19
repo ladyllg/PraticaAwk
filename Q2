@@ -1,0 +1,12 @@
+BEGIN{
+    FS=",";
+    print "Questão 2";
+}
+{
+	if ($2 ~ / DA /) print $1, $2
+    if ($2 ~ / DE /) print $1, $2
+    if ($2 ~ / DO /) print $1, $2
+}
+END {
+	print NR,"Programa finalizado!";
+}
