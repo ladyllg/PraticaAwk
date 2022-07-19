@@ -9,7 +9,7 @@ for linha in reader:
     if linha[0] == '21751911' or linha[0] == '21552409':
         print(linha[0], linha[1])
 
-ficheiro.seek(0)
+ficheiro.seek(0) # Retorna o cursor do ficheiro para o inicio
 next(reader) # Pula cabeçalho
 print("\n**** QUESTAO 2 *****")
 for linha in reader:
